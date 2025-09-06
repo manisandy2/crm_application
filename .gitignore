@@ -1,0 +1,57 @@
+# Python compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled C extensions
+*.so
+
+# Logs
+*.log
+
+# Database files
+*.db
+*.sqlite3
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Installer packages
+*.egg
+*.egg-info
+*.whl
+
+# Coverage reports
+*.cover
+*.py,cover
+
+# Translations
+*.mo
+*.pot
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+*.xml
+
+# Virtual environments (anywhere)
+**/venv/
+**/.venv/
+**/env/
+**/ENV/
+
+# Cache and build folders
+__pycache__/
+build/
+dist/
+
+delete.py
+
+.idea/
+.env
+json_data_backup/
+test/
