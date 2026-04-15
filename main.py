@@ -3,7 +3,7 @@ from fastapi import FastAPI, Query,Body, HTTPException,UploadFile, File
 from core.catalog_client import get_catalog_client
 import json,decimal,datetime,re,logging
 
-from routers import (bucket, namespace, get_data, crm_application, table )
+from routers import (bucket, namespace, get_data, crm_application, table,partition )
 from core.catalog_client import create_jwt
 from fastapi import Depends, FastAPI, HTTPException, status,Form
 from fastapi import FastAPI, HTTPException, Request,Header
@@ -38,6 +38,7 @@ app.include_router(namespace.router)
 app.include_router(table.router)
 app.include_router(crm_application.router)
 app.include_router(get_data.router)
+app.include_router(partition.router)
 
 # app.include_router(json_data.router)
 
